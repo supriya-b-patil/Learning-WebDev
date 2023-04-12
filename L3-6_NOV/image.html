@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <img src="./pictures/cake.jpg" alt="cake"
+    usemap="#image-map">
+    
+
+    <map name="image-map">
+        <area target="" onclick= "myfunOne()" coords="983,685,2792,1899" shape="rect">
+        <area target="" onclick= "myfunTwo()" coords="39,3473,1466,4523" shape="rect">
+    </map>
+
+    
+    <script>
+        function myfunOne(){
+            alert("You clicked one")
+        }
+        function myfunTwo(){
+            alert("You clicked Two")
+        }
+    </script>
+</body>
+</html>
