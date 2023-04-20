@@ -1,0 +1,21 @@
+body{
+    background-color:#87dee7;
+}
+
+#id_of_lorem_ipsum{
+    font-size: 45px;
+    float: right;
+    background-image:"https://images.pexels.com/photos/15819503/pexels-photo-15819503.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load ";
+    text-decoration-line: underline;
+    background-color: hotpink;
+}
+
+/* revision 2 */
+div + p  {
+    background-color: gold;
+}
+
+input:focus{
+    color: brown;
+    background-color: beige;
+}
