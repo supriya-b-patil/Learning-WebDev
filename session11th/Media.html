@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body{
+        display: flex;
+        }
+        .block{
+            width: 70px;
+            height: 70px;
+            border: 2px solid red;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .box{
+                background-color: green;
+                border: 2px solid black;
+            }
+
+        @media(min-width:500px) and (max-width:1000px){
+            body{
+                background-color:pink;
+                display: flex;
+                flex-direction: column;
+            }
+            .box{
+                background-color: cornflowerblue;
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">One</div>
+    <div class="block">Two</div>
+    <div class="block">Three</div>
+    <div class="block">Four</div>
+    <div> minimize window to see what is @media query</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid media</title>
+    <style>
+        .box{
+            border:1px solid black;
+            width: 3000px;
+            height: 3000px;
+        }
+
+        .smallbox{
+            border: 2px solid blue;
+            width: 250px;
+            height: 400px;
+            padding-right: 10px;
+        }
+
+        #rel{
+            background-color:orange;
+            position: relative;
+            left: 600px
+        }
+
+        #abs{
+            background-color: aquamarine;
+            position: absolute;
+            bottom : 425px;
+        }
+
+        #sticky{
+            background-color:burlywood;
+            position: sticky;
+            left : 100px;
+            top: 400px;
+        }
+
+        #fixed{
+            background-color:magenta;
+            position: sticky;
+            left : 100px;
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="smallbox" id="abs">
+            <ul>
+            <li>This box is placed using "position"(property) as "absolute"(value), the value is measured from the edge of the webpage in opposite direction.</li><br>
+            <li>Eg.If specified "bottom", box leaves this space "from bottom-edge" and appears. Same is true for property Top, Right, Left.</li><br>
+            <li>This box is 450px away from bottom.<br>position: absolute; bottom : 500px;</li> <br>
+            <li>"Absolute" places itself relative to the edge of browser</li>
+            </ul>
+        </div>
+
+        <div class="smallbox" id="rel">
+            <ul>
+                <li>This box is placed using "position"(property) as "relative"(value), the value is measured relative to itself.</li><br>
+                <li>Eg.If specified "left", box leaves this space "from left-edge" and appears to the opposite. Same is true for property Top, Right, Left.</li><br>
+                <li>This box is 500px away from its orginal position.<br>position: relative; left : 500px;</li><br>
+                <li>"Relative" places itself relative to its original position</li>
+            </ul>
+        </div>
+
+        <div class="smallbox" id="sticky">
+            <ul>
+                <li>This box is placed using "position"(property) as "sticky"(value).Measured w.r.t browser-edge.It remains constant even after scrolling.</li><br>
+                <li>Specified "left", box leaves space "from left-edge" and appears to the opposite. Same is true for property Top, Right, Left.</li><br>
+                <li>Position: relative; left: 300px; bottom: 470px; top: 400px;</li><br>
+                <li>No matter how big is the page, box remains stuck to edge at distance of 100px away from left edge and 400px away from top edge as specified.</li>
+            </ul>
+        </div>
+
+        
+        <div class="smallbox" id="fixed">
+            <ul>
+                <li>This box is placed using "position"(property) as "sticky"(value).Measured w.r.t browser-edge.It remains constant even after scrolling.</li><br>
+                <li>Specified "left", box leaves space "from left-edge" and appears to the opposite. Same is true for property Top, Right, Left.</li><br>
+                <li>Position: relative; left: 300px; bottom: 470px; top: 400px;</li><br>
+                <li>No matter how big is the page, box remains stuck to edge at distance of 100px away from left edge and 400px away from top edge as specified.</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html> 
