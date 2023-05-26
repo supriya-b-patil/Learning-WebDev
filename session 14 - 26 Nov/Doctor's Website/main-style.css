@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    background-color:azure; 
+    margin:auto
+}
+
+div{
+    padding: 0 5%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div ul{
+    display: flex;
+    align-items: center;
+}
+
+div ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+}   
+
+div ul li:first-child{
+    color: darkcyan;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+main section{
+    width:50%;
+}
+
+.leftsection{
+    margin-left: 2%;
+    position: relative;
+}
+
+.topangle{
+    width:25px;
+}
+
+.leftsection h1{
+    font-size: 70px;
+}
+
+.leftsection p {
+    color: #808080;
+    font-size: 18px;
+    margin:20px 0;
+}
+
+.bottomangle{
+    width:25px;
+    position:absolute;
+    right:25px;
+}
+
+.stethoscope{
+    position: absolute;
+    width: 90%;
+    top: 60px;
+    right: 25px;
+    z-index: -1;
+}
+
+.mouse{
+    position:absolute;
+    right: -30px;
+    bottom: 0;
+    width:30px;
+}
+.leftsection button{
+    color:aliceblue;
+    background-color: #66cdaa;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+/* Right size */
+.green, .yellow{
+    position:absolute;
+    right:0;
+}
+
+.green{
+    width:35%;
+    bottom:30px;
+}
+
+.yellow{
+    width: 30%;
+    bottom:30px;
+}
+
+
+.doctor{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+}
