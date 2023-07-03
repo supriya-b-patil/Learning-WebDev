@@ -1,0 +1,7 @@
+.footer-div {
+	position: absolute;
+	bottom: 0;
+	background-color: #6f6be0;
+	width: 100%;
+	border-radius: 10px;
+}

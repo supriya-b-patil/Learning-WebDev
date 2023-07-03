@@ -1,0 +1,79 @@
+.note-wrapper {
+	padding: 15px;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.a-note {
+	padding: 20px;
+	background-color: #ffffff;
+	margin: 15px 25px;
+	width: 350px;
+}
+.a-note p {
+	height: 100px;
+	overflow: scroll;
+	overflow-x: hidden;
+	word-wrap: break-word;
+}
+.icons {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.icon-edit {
+	cursor: pointer;
+	color: #4caf50;
+	transition: all 0.25s ease-in-out;
+	padding: 5px;
+	background-color: #efefef;
+	border-radius: 50%;
+}
+.icon-delete {
+	cursor: pointer;
+	color: #d11a2a;
+	transition: all 0.25s ease-in-out;
+	padding: 5px;
+	background-color: #efefef;
+	border-radius: 50%;
+}
+
+.icon-edit:hover,
+.icon-delete:hover {
+	scale: 1.3;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #6f6be0;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgb(36, 36, 36);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+	transition: all 0.25s ease-in-out;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}

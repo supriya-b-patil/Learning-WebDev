@@ -1,0 +1,73 @@
+body {
+	background: #f6f7f9;
+}
+.form-div {
+	width: 420px;
+	background: #fff;
+}
+.form-group {
+	margin-bottom: 1em;
+	transition: all 0.3s;
+}
+.name-input {
+	text-transform: capitalize;
+}
+.form-label {
+	font-size: 1em;
+	color: #aaa;
+	display: block;
+	opacity: 1;
+	transform: translateY(-1.55em);
+	transform-origin: 0 0;
+	transition: all 0.3s ease-in-out;
+	pointer-events: none;
+}
+.form-control {
+	box-shadow: none;
+	background-color: rgba(0, 0, 0, 0.02);
+	border-radius: 0px;
+	background-color: transparent;
+	border-bottom: 1px solid #ccc;
+	width: 250px;
+	transition: all 0.5s;
+	padding: 5px;
+	caret-color: #504be5;
+}
+.form-control::placeholder {
+	color: transparent;
+}
+.form-control:focus {
+	box-shadow: none;
+	outline: none;
+	border-color: #504be5;
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+	transform: translateY(-2.9em) scale(0.7);
+}
+.form-group:focus-within {
+	transform: scale(1.05, 1.05);
+}
+.update-btn > input {
+	width: 250px;
+	padding: 10px;
+	background-color: rgb(205, 205, 205);
+	margin-bottom: 5px;
+	margin-top: -5px;
+	border-color: none;
+	border: none;
+	transition: all 0.5s ease-in-out;
+}
+.update-btn > input:hover {
+	background-color: #504be5;
+	color: #fff;
+	border-color: none;
+	cursor: pointer;
+	border: none;
+}
+@media only screen and (max-width: 480px) {
+	.form-div {
+		width: 320px;
+		border-radius: 4rem;
+	}
+}

@@ -1,0 +1,19 @@
+.content {
+	background-color: #f6f7f9;
+}
+.content-wrapper {
+	background-color: #f6f7f9;
+	height: 85vh;
+	overflow: scroll;
+}
+.btn-create:hover {
+	background: #504be5;
+	color: #fff;
+}
+@media only screen and (max-width: 480px) {
+	.btn-create {
+		background: rgb(86, 89, 245);
+		color: #fff;
+		margin-left: 1rem;
+	}
+}

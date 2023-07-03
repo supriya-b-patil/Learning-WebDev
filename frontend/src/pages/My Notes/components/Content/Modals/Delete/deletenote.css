@@ -1,0 +1,15 @@
+.model {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+@media only screen and (max-width: 480px) {
+	.modal-btns {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.btn-del {
+		background: rgb(192, 73, 73);
+	}
+}

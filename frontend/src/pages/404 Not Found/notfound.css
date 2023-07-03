@@ -1,0 +1,16 @@
+.image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 5rem;
+}
+button {
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: rgb(208, 212, 212);
+	transition: all 0.25s ease-in-out;
+}
+button:hover {
+	background-color: aqua;
+}
